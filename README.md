@@ -24,7 +24,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 
 ```bash
 git clone https://github.com/owenvassarotto/expense-control.git
-cd expense-control-react-vite
+cd expense-control
 ```
 
 2. Install dependencies:
