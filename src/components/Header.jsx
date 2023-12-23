@@ -1,4 +1,5 @@
 import NewBudget from "./NewBudget";
+import BudgetControl from "./BudgetControl";
 
 const Header = ({
     budget, 
@@ -12,7 +13,9 @@ const Header = ({
 
         {/* conditional display components */}
         {isValidBudget ? (
-            <p>Expense Control</p>
+            <BudgetControl
+                budget={budget}
+            />
         ) : (
             <NewBudget 
                 budget={budget} 
