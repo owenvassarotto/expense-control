@@ -1,6 +1,6 @@
 import { useState } from 'react'
-
 import Header from './components/Header';
+  import NewExpenseIcon from './img/nuevo-gasto.svg';
 
 function App() {
   const [budget, setBudget] = useState(0);
@@ -14,6 +14,15 @@ function App() {
         isValidBudget={isValidBudget}
         setIsValidBudget={setIsValidBudget}
       />
+
+      {/* && -> replace ? : when you don't have to use else */}
+      {isValidBudget && (
+        <div className='nuevo-gasto'>
+          <img 
+            src={NewExpenseIcon} 
+          />
+        </div>
+      )}
     </div>
   )
 }
